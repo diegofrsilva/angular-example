@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Example utilizando Angular.js</title>
+		<link rel="stylesheet" type="text/css" href="third-parties/bootstrap-3.1.1/css/bootstrap.min.css"><link>
+		<link rel="stylesheet" type="text/css" href="third-parties/bootstrap-3.1.1/css/bootstrap-theme.min.css"><link>
+		<link rel="stylesheet" type="text/css" href="third-parties/jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css"><link>
+	</head>
+
+	<body ng-app="AlunosApp">
+		<div id="contentMenu" ng-include="'partials/menu.html'"></div>
+		<div id="content" ng-view></div>
+	</body>
+
+	<script src="third-parties/jquery-2.1.1/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="third-parties/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+	<script src="third-parties/bootstrap-3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="third-parties/angular-1.2.16/angular.min.js" type="text/javascript"></script>
+	<script src="third-parties/angular-1.2.16/angular-route.min.js" type="text/javascript"></script>
+
+	<!-- Modulos, controllers, directivas... -->
+	<script src="js/core/alunos-app.js" type="text/javascript"></script>
+	<script src="js/core/rotas.js" type="text/javascript"></script>
+	<script src="js/controllers/alunos.js" type="text/javascript"></script>
+	<script src="js/directives/datePicker.js" type="text/javascript"></script>
+</html>
